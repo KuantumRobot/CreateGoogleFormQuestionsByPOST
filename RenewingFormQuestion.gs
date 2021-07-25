@@ -10,7 +10,7 @@ function doPost(e) {
   // Build regex validation(12 digits)
   let textValidation = FormApp.createTextValidation()
   .setHelpText('12 digits only')
-  .requireTextMatchesPattern("\d{12}")
+  .requireTextMatchesPattern("\\d{12}")
   .build();
 
   // Delete existing questions except for noDelete1 & 2
