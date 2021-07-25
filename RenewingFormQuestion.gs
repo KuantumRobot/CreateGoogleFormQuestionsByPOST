@@ -13,10 +13,10 @@ function doPost(e) {
   .requireTextMatchesPattern(/\d{12/)
   .build();
 
-  // Delete existing questions
+  // Delete existing questions except for noDelete1 & 2
   for(let q of existingQs){
     qid=q.getId()
-    if(qid!=noDelete1&qid!=noDelete2){
+    if(qid != noDelete1 & qid != noDelete2){
       form.deleteItem(q);
     }
   };
