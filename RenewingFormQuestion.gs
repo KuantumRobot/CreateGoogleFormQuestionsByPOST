@@ -1,6 +1,6 @@
 function doPost(e) {
-  const noDelete1="#######"; //Avoid deleting section title(for me to use). Input question ID.
-  const noDelete2="#######"; //Avoid deleting default question(for me to use). Input question ID.
+  const noDelete1="#######"; //Avoid deleting section title(if needed). Input question ID.
+  const noDelete2="#######"; //Avoid deleting default question(if needed). Input question ID.
   const formid="##################"; //Your form's id
 
   let form = FormApp.openById(formid);
